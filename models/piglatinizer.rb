@@ -13,13 +13,10 @@ class PigLatinizer
   end
 
   def pig_latin_phrase(phrase)
-
-
-
-
-
-
-
-
-
+    word_array = phrase.split(" ")
+    word_array.collect do |word|
+      pig_latin_word(word)
+    end
+    word_array.join(" ")
+  end
 end
